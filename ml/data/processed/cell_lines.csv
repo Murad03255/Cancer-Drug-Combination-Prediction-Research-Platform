@@ -1,0 +1,113 @@
+cell_line,cancer_type,tissue
+A2058,Melanoma,Unknown
+A2780,Solid Tumor,Unknown
+A375,Melanoma,Unknown
+A427,Solid Tumor,Unknown
+CAOV3,Solid Tumor,Unknown
+COLO320DM,Solid Tumor,Unknown
+DLD1,Solid Tumor,Unknown
+EFM192B,Solid Tumor,Unknown
+ES2,Solid Tumor,Unknown
+HCT116,Colorectal Cancer,Unknown
+HT144,Solid Tumor,Unknown
+HT29,Colorectal Cancer,Unknown
+KPL1,Solid Tumor,Unknown
+LNCAP,Prostate Cancer,Unknown
+LOVO,Solid Tumor,Unknown
+MDAMB436,Solid Tumor,Unknown
+MSTO,Solid Tumor,Unknown
+NCIH1650,Solid Tumor,Unknown
+NCIH2122,Solid Tumor,Unknown
+NCIH23,Solid Tumor,Unknown
+NCI-H460,Lung Cancer,Unknown
+NCIH520,Solid Tumor,Unknown
+OCUBM,Solid Tumor,Unknown
+OV90,Solid Tumor,Unknown
+OVCAR3,Solid Tumor,Unknown
+PA1,Solid Tumor,Unknown
+RKO,Solid Tumor,Unknown
+RPMI7951,Solid Tumor,Unknown
+SKMEL30,Solid Tumor,Unknown
+SKMES1,Solid Tumor,Unknown
+SK-OV-3,Ovarian Cancer,Unknown
+SW-620,Colorectal Cancer,Unknown
+SW837,Solid Tumor,Unknown
+T-47D,Breast Cancer,Unknown
+UACC62,Solid Tumor,Unknown
+UWB1289,Solid Tumor,Unknown
+UWB1289+BRCA1,Solid Tumor,Unknown
+VCAP,Solid Tumor,Unknown
+ZR751,Solid Tumor,Unknown
+KBM-7,Solid Tumor,Unknown
+NCI-H226,Solid Tumor,Unknown
+K-562,Leukemia,Unknown
+CCRF-CEM,Leukemia,Unknown
+MDA-MB-468,Solid Tumor,Unknown
+IGROV1,Ovarian Cancer,Unknown
+SNB-75,Glioblastoma,Unknown
+SK-MEL-28,Melanoma,Unknown
+MDA-MB-231,Breast Cancer,Unknown
+SF-268,Glioblastoma,Unknown
+HOP-62,Lung Cancer,Unknown
+NCI-H522,Lung Cancer,Unknown
+SR,Leukemia,Unknown
+MOLT-4,Leukemia,Unknown
+PC-3,Prostate Cancer,Unknown
+NCI/ADR-RES,Solid Tumor,Unknown
+OVCAR-5,Ovarian Cancer,Unknown
+UACC-257,Solid Tumor,Unknown
+NCI-H322M,Solid Tumor,Unknown
+SF-539,Glioblastoma,Unknown
+KM12,Colorectal Cancer,Unknown
+BT-549,Breast Cancer,Unknown
+HCC-2998,Colorectal Cancer,Unknown
+SN12C,Renal Cancer,Unknown
+U251,Glioblastoma,Unknown
+HS 578T,Breast Cancer,Unknown
+LOX IMVI,Solid Tumor,Unknown
+M14,Melanoma,Unknown
+MDA-MB-435,Solid Tumor,Unknown
+A549,Lung Cancer,Unknown
+SNB-19,Glioblastoma,Unknown
+HL-60(TB),Leukemia,Unknown
+A498,Renal Cancer,Unknown
+RXF 393,Renal Cancer,Unknown
+CAKI-1,Renal Cancer,Unknown
+786-0,Renal Cancer,Unknown
+HCT-15,Solid Tumor,Unknown
+TK-10,Renal Cancer,Unknown
+MALME-3M,Melanoma,Unknown
+COLO 205,Colorectal Cancer,Unknown
+OVCAR-8,Ovarian Cancer,Unknown
+RPMI-8226,Multiple Myeloma,Unknown
+UO-31,Renal Cancer,Unknown
+HOP-92,Solid Tumor,Unknown
+EKVX,Lung Cancer,Unknown
+MCF7,Breast Cancer,Unknown
+ACHN,Renal Cancer,Unknown
+SK-MEL-2,Melanoma,Unknown
+DU-145,Prostate Cancer,Unknown
+SK-MEL-5,Solid Tumor,Unknown
+SF-295,Glioblastoma,Unknown
+OVCAR-4,Ovarian Cancer,Unknown
+T98G,Solid Tumor,Unknown
+TMD8,Solid Tumor,Unknown
+DIPG25,Solid Tumor,Unknown
+JHH-136,Solid Tumor,Unknown
+A-673,Solid Tumor,Unknown
+JHH-520,Solid Tumor,Unknown
+U-HO1,Solid Tumor,Unknown
+PANC-1,Pancreatic Cancer,Unknown
+L-1236,Solid Tumor,Unknown
+HDLM-2,Solid Tumor,Unknown
+L-428,Solid Tumor,Unknown
+TC-71,Solid Tumor,Unknown
+EW-8,Solid Tumor,Unknown
+Rh36,Solid Tumor,Unknown
+SMS-CTR,Solid Tumor,Unknown
+SU-DIPG-XIII,Solid Tumor,Unknown
+RD,Rhabdomyosarcoma,Unknown
+ED-40515,Solid Tumor,Unknown
+TC-32,Solid Tumor,Unknown
+KB-3-1,Solid Tumor,Unknown
+KB-ChR-8-5-11,Solid Tumor,Unknown
