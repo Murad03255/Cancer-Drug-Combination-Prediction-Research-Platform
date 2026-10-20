@@ -58,9 +58,17 @@ class HybridSingleDrugPredictor:
             self.num_cols = joblib.load(os.path.join(p, 'num_cols.joblib'))
             self.global_mean = joblib.load(os.path.join(p, 'global_mean.joblib'))
 
-            # Load dataset to extract options
+            # Load dataset or options cache to extract options
+            options_json_path = os.path.join(p, 'options.json')
             data_path = os.path.join(p, 'CancerDataset.csv')
-            if os.path.exists(data_path):
+            if os.path.exists(options_json_path):
+                import json
+                with open(options_json_path, 'r', encoding='utf-8') as f:
+                    opt_data = json.load(f)
+                    self.unique_drugs = opt_data.get('unique_drugs', [])
+                    self.test_options = opt_data.get('test_options', [])
+                    self.cancer_options = opt_data.get('cancer_options', [])
+            elif os.path.exists(data_path):
                 df = pd.read_csv(data_path, low_memory=False)
                 self.unique_drugs = sorted(df['DRUG_NAME'].dropna().unique().tolist())
                 self.test_options = sorted(df['Growth Properties'].dropna().unique().tolist())

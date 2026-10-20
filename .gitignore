@@ -21,6 +21,10 @@ yarn-error.log*
 ml/data/raw/
 ml/data/processed/drug_combo_synergy.csv
 
+# Large legacy model artifacts (9GB RF & raw CSV)
+models_out/rf_model.joblib
+models_out/CancerDataset.csv
+
 # IDE
 .idea/
 .vscode/

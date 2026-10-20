@@ -1,0 +1,65 @@
+# ==============================================================================
+# Cancer Drug Combination Prediction & Research Platform
+# Docker Compose Orchestration
+# ==============================================================================
+
+services:
+  # ----------------------------------------------------------------------------
+  # 1. FastAPI + ML Inference Engine Backend
+  # ----------------------------------------------------------------------------
+  backend:
+    build:
+      context: .
+      dockerfile: backend/Dockerfile
+    container_name: cancer-prediction-backend
+    restart: unless-stopped
+    ports:
+      - "8000:8000"
+    environment:
+      - APP_NAME=Cancer Drug Combination Prediction & Research Platform
+      - APP_VERSION=1.0.0
+      - DEBUG=True
+      - DATABASE_URL=sqlite:////app/backend/data/cancer_prediction.db
+      - SECRET_KEY=cancer-prediction-platform-secret-key-change-in-production
+      - MODEL_DIR=/app/ml/saved_models
+      - MODELS_OUT_DIR=/app/models_out
+      - CORS_ORIGINS=["http://localhost:5173", "http://localhost:80", "http://localhost:3000", "http://127.0.0.1:5173"]
+    volumes:
+      # Persistent volume for SQLite database storage
+      - backend_data:/app/backend/data
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8000/health"]
+      interval: 15s
+      timeout: 10s
+      retries: 3
+      start_period: 25s
+    networks:
+      - cancer-prediction-net
+
+  # ----------------------------------------------------------------------------
+  # 2. React + Vite + Tailwind CSS Frontend (Served with Nginx)
+  # ----------------------------------------------------------------------------
+  frontend:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+      args:
+        - VITE_API_URL=http://localhost:8000
+    container_name: cancer-prediction-frontend
+    restart: unless-stopped
+    ports:
+      - "5173:80"
+    depends_on:
+      backend:
+        condition: service_healthy
+    networks:
+      - cancer-prediction-net
+
+volumes:
+  backend_data:
+    name: cancer_prediction_backend_data
+
+networks:
+  cancer-prediction-net:
+    name: cancer_prediction_network
+    driver: bridge
