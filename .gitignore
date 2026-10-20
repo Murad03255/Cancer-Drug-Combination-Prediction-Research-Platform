@@ -29,3 +29,6 @@ models_out/CancerDataset.csv
 .idea/
 .vscode/
 *.swp
+
+# Internal Documentation & Reports
+docs/
